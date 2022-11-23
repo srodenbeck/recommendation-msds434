@@ -1,9 +1,13 @@
 import predict
 from google.cloud import aiplatform
+import google.auth
 import numpy as np
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+
+creds,proj_id = google.auth.default()
+aiplatform.init(credentials=creds,project=proj_id)
 
 st.set_page_config(layout='centered')
 st.title("What Crop Should You Plant?")
