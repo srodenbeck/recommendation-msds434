@@ -34,10 +34,10 @@ crop_list = ['Watermelon','Rice','Pomegranate','Pigeon Peas','Papaya','Orange','
 
 if st.button('Predict'):
     probs = predict.predict_custom_trained_model_sample(
-        project="717860154136",
-        endpoint_id="3838513839821815808",
-        # project="554698915331",
-        # endpoint_id="6625397584234020864",
+        # project="717860154136",
+        # endpoint_id="3838513839821815808",
+        project="554698915331",
+        endpoint_id="6625397584234020864",
         location="us-central1",
         instances=[model_input]
     )
